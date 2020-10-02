@@ -1,0 +1,353 @@
+
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background: rgb(20,20,20);
+    background: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);
+    min-width: 600px;
+}
+/* ----------------------- här är Top Tunes meny------------------------- */
+.menu {
+    width: 20%;
+    float: right;
+    list-style: none;
+    height: 60px;
+    margin-left: 20px;
+}
+/* ---------------   Här börjar dropdownmenyn   ------------------ */
+.menu ul {
+    margin: 0;
+    padding: 0;
+    font: italic;
+    text-decoration: none;    
+    background-color: rgb(20,20,20);
+    background-color: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);
+}
+
+/*---------------------------- Dropdownmeny design total ------------------------------*/
+.menu ul li{
+    float: left;
+    padding: 20px 30px;
+    list-style: none;
+    text-align: center;
+    font: italic;
+    /* background: rgb(249,216,103);
+    background: linear-gradient(64deg, rgba(249,216,103,1) 39%, rgba(190,153,25,1) 100%); */
+    text-decoration: none;
+    width: 75px;
+}
+
+/*--------------------------------- Dropdown 1 länkar -----------------------------------*/
+.menu ul a{
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(20,20,20);
+    color: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);
+}
+
+/* ------------------------------- dropdown menyer hover stil ----------------------------------*/
+.menu ul a:hover {
+    color: rgb(20,20,20);
+    color: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);
+    font-weight: 100;
+}
+
+/* ------------------------  meny 2 hover stil --------------------------- */
+.menu ul a:hover li {
+    color: rgb(20,20,20);
+    color: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);
+    background: rgb(249,216,103);
+    background: linear-gradient(64deg, rgba(249,216,103,1) 39%, rgba(190,153,25,1) 100%);
+    text-decoration: none;
+    width: 80px;
+}
+
+/* --------------------------- dropdown menyer backgrund ----------------------------- */
+.menu ul li ul {
+    width: 135px;
+    position: absolute;
+    display: none;
+    top: 68px;
+    margin-left: -60px;
+    text-decoration: none;
+    background: rgb(249,216,103);
+    background: linear-gradient(64deg, rgba(249,216,103,1) 39%, rgba(190,153,25,1) 100%);
+}
+
+/* ------------------------------ Gör dropdown synlig vid hover ---------------------------- */
+.menu ul li:hover ul {
+    display: block;
+}
+
+/*------------------------------ dropdown 2 placering ------------------------------*/
+.menu ul li ul li ul {
+    position: absolute;
+    display: none;
+    margin: -68px 90px;
+}
+
+/*------------------------------ dropdown 2 ------------------------------*/
+.menu ul li ul li ul li{
+    display: none;
+    height: 45px;
+    color: rgb(20,20,20);
+    color: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);;}
+
+/*------------------------------ dropdown 2 hover ------------------------------*/
+.menu ul li ul li:hover ul li {
+    display: block;
+}
+
+
+/*------------------------------ Menybar locationg ------------------------------*/
+.logo {
+    width: 110px;
+    height: 50px;
+}
+
+/* ------------------------------   Här slutar dropdownmenyn   --------------------------------- */
+
+body {
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(20,20,20);
+    background: linear-gradient(64deg, rgba(20,20,20,1) 0%, rgba(34,34,34,1) 99%);
+    text-align: center;
+}
+/*------------------------------ inlogg motsvarar lilla menyraden uppe till höger på sidan ------------------------------*/
+.inlogg {
+    margin: -5px -10px -10px 15px;
+    padding: 10px 30px;
+    flex: 1;
+}
+
+/*------------------------------ Menybar location ------------------------------*/
+.inlogg ul li {
+    float: right;
+    list-style: none;
+    padding: 0 10px;
+}
+
+/*------------------------------ ändrar opaciteten vid hover ------------------------------*/
+.inlogg ul li:hover {
+    opacity: 0.7;
+}
+
+/*------------------------------ design ------------------------------*/
+.inlogg ul li a {
+    color: rgb(249,216,103);
+    color: linear-gradient(64deg, rgba(249,216,103,1) 39%, rgba(190,153,25,1) 100%);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+
+.main{
+/*------------------------------ bakgrundsbilden ------------------------------*/
+    width:100%;
+    height:700px;
+    min-width: 800px;
+    background-image: url("../img/backgroundmain.jpg");
+
+/*------------------------------ bakgrundsbilden format ------------------------------*/
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    color: rgb(249,216,103);
+    color: linear-gradient(64deg, rgba(249,216,103,1) 77%, rgba(190,153,25,1) 100%);
+
+    font-size: 25px;
+
+/*------------------------------ paralax effekt ------------------------------*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------------------- blur effekt -------------------------------*/
+.main .listan {
+    background-image: url(/img/opacity_bg.png);
+}
+
+
+/*------------------------------ text Resultat ------------------------------*/
+h3 {
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    }
+
+/* färg på listan */
+.listan p{
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    }
+
+
+/*------------------------------ sök-fältet ------------------------------*/
+.search {
+    background-color:transparent;
+    border: 2px solid goldenrod;
+    border-radius: 4px;
+    color: goldenrod;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.search:hover {
+    background-color: black;
+}
+
+.search:active {
+    background-color: black;
+}
+
+
+/*------------------------------ sök-knappen ------------------------------*/
+.button {
+    background-color:transparent;
+    border: 2px solid goldenrod;
+    border-radius: 4px;
+    color: goldenrod;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+  .button:hover{
+    background-color: rgb(236,189,7);
+    background-color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    color: black;
+  }
+
+.resultat2 {
+    width: 100%;
+    font-size: 20px;
+    height: 100px;
+    padding-bottom: 150px;
+    list-style: none;
+}
+
+.middle {
+    height: 300px;
+    width: 100%;
+}
+
+
+/*------------------------------ footer ------------------------------*/
+.footer{
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    padding: 10px;
+    display: flex;
+    width:100%;
+    height:500px;
+    min-width: 600px;
+}
+
+/*------------------------------ columns i footer ------------------------------*/
+
+.about {
+    width: 19%;
+    height: 150px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.about ul {
+    margin-left: 50px; 
+    list-style:none;
+}
+
+.about ul li a{
+    font-size: 15px;
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    display: inline-flex;
+}
+
+/*------------------------------ ändrar opaciteten något vid hover ------------------------------*/
+.about ul li:hover {
+    opacity: 0.7;
+}
+
+/*------------------------------ social media ikoner ------------------------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10%;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: right;
+  }
+  /*------------------------------ ändrar opaciteten något vid hover ------------------------------*/
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: rgba(34,34,34,1);
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    border: 2px solid goldenrod;
+    margin-bottom: 15px;
+  }
+  
+  .fa-twitter {
+    background: rgba(34,34,34,1);
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    border: 2px solid goldenrod;
+    margin-bottom: 15px;
+  }
+  .fa-instagram {
+    background: rgba(34,34,34,1);
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    border: 2px solid goldenrod;
+  }
+
+.icons {
+    width: 15%;
+    height: 300px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 200px;
+}
+
+.icons ul{
+    list-style: none;
+}
+
+
+
+/*------------------------------ claimer ------------------------------*/
+.footer2 {
+    min-width: 600px;
+    color: rgb(236,189,7);
+    color: linear-gradient(64deg, rgba(236,189,7,1) 0%, rgba(236,189,7,1) 25%, rgba(190,153,25,1) 50%);
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
